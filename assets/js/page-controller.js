@@ -4,14 +4,20 @@
 
 const carouselData = {
             pencegahan: [
-                'https://via.placeholder.com/800x1000/8EC5FC/000000?text=ABSTINENCE+%26+AWARENESS',
-                'https://via.placeholder.com/800x1000/B4A7D6/000000?text=BE+FAITHFUL',
-                'https://via.placeholder.com/800x1000/DDA15E/000000?text=LANGKAH+PENCEGAHAN+IMS'
+                'https://imspanduan.github.io/images/carousel-pencegahan/1.png',
+                'https://imspanduan.github.io/images/carousel-pencegahan/2.png',
+                'https://imspanduan.github.io/images/carousel-pencegahan/3.png',
+                'https://imspanduan.github.io/images/carousel-pencegahan/4.png',
+                'https://imspanduan.github.io/images/carousel-pencegahan/5.png',
+                'https://imspanduan.github.io/images/carousel-pencegahan/6.png',
             ],
             penanganan: [
-                'https://via.placeholder.com/800x1000/FAA0A0/000000?text=PENANGANAN+IMS+1',
-                'https://via.placeholder.com/800x1000/B0D9B1/000000?text=PENANGANAN+IMS+2',
-                'https://via.placeholder.com/800x1000/D4A5A5/000000?text=PENANGANAN+IMS+3'
+                'https://imspanduan.github.io/images/carousel-penanganan/7.png',
+                'https://imspanduan.github.io/images/carousel-penanganan/8.png',
+                'https://imspanduan.github.io/images/carousel-penanganan/9.png',
+                'https://imspanduan.github.io/images/carousel-penanganan/10.png',
+                'https://imspanduan.github.io/images/carousel-penanganan/11.png',
+                'https://imspanduan.github.io/images/carousel-penanganan/12.png'
             ]
         };
 
