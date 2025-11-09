@@ -51,7 +51,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='24' height='20' viewBox=
     <div class="content">
         <!-- Page Beranda -->
         <div id="page-modul" class="page-content hidden">
-            <div class="card-custom card-blue card-bg-for-blue" >
+            <div class="card-custom card-blue card-bg-for-blue" onclick="navigateTo('modul-pencegahan-detail')">
                 <div class="card-text">
                     <div class="card-title">Edukasi Pencegahan IMS</div>
                     <button class="card-btn">
@@ -63,7 +63,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='24' height='20' viewBox=
                 </div>
             </div>
 
-            <div class="card-custom card-blue-alt card-bg-for-blue-alt">
+            <div class="card-custom card-blue-alt card-bg-for-blue-alt" onclick="navigateTo('modul-penanganan-detail')">
                 <div class="card-text">
                     <div class="card-title">Edukasi Penanganan IMS</div>
                     <button class="card-btn">
@@ -73,6 +73,189 @@ background-image: url("data:image/svg+xml,%3Csvg width='24' height='20' viewBox=
                 <div class="card-illustration">
                     <img src="images/idea.webp" alt="Edukasi Penanganan IMS" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
+            </div>
+        </div>
+
+        <div id="page-modul-pencegahan-detail" class="page-content hidden">
+            <div class="module-header">
+                <div class="module-header-title">Peduli IMS</div>
+                <div class="module-header-subtitle">Modul E-Learning : Pencegahan IMS</div>
+            </div>
+
+            <div class="card-custom card-blue card-bg-for-blue">
+                <div class="card-text">
+                    <div class="card-title">Modul E-Learning</div>
+                    <button class="module-banner-btn" onclick="navigateTo('modul-pencegahan-komponen')">
+                        Cek Sekarang <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="card-illustration">
+                    <img src="images/teaching.webp" alt="Edukasi Pencegahan IMS" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+            </div>
+
+            <div class="module-section">
+                <div class="module-section-title">Deskripsi Umum Modul</div>
+                <div class="module-section-text">
+                    Modul e-learning ini dirancang untuk membekali masyarakat, tenaga kesehatan, dan remaja dengan pemahaman mendalam mengenai pencegahan Infeksi Menular Seksual (IMS). Kasus IMS di Indonesia menunjukkan tren peningkatan dari tahun ke tahun, baik pada kelompok dewasa maupun remaja. Oleh karena itu, penting bagi setiap individu untuk memiliki pengetahuan dan kesadaran dalam mengantisipasi serta mencegah penyebaran IMS sejak dini.
+                    <br><br>
+                    Modul ini dikembangkan untuk meningkatkan kesadaran akan pentingnya perilaku hidup sehat dan tanggung jawab dalam menjaga kesehatan reproduksi. Melalui pembelajaran interaktif berbasis video, studi kasus, dan kuis reflektif, peserta akan diajak memahami berbagai jenis IMS, cara penularannya, langkah pencegahan, serta pentingnya deteksi dini dan pengobatan yang tepat.
+                    <br><br>
+                    Dengan mengikuti modul ini, diharapkan peserta mampu menjadi agen perubahan dalam upaya pencegahan dan pengendalian IMS di lingkungan masing-masing.
+                </div>
+            </div>
+
+            <div class="module-section">
+                <div class="module-section-title">Tujuan Pembelajaran</div>
+                <div class="module-section-text">
+                    Setelah mengikuti modul ini, peserta diharapkan mampu:
+                </div>
+                <ol class="module-section-list">
+                    <li>Menjelaskan pengertian dan jenis-jenis Infeksi Menular Seksual (IMS).</li>
+                    <li>Mengidentifikasi faktor risiko dan cara penularan IMS di masyarakat.</li>
+                    <li>Memahami langkah-langkah pencegahan IMS, termasuk perilaku seksual yang aman.</li>
+                    <li>Menjelaskan pentingnya pemeriksaan dini dan pengobatan tepat bagi penderita IMS.</li>
+                    <li>Meningkatkan kesadaran diri dan lingkungan sekitar dalam menjaga kesehatan reproduksi.</li>
+                </ol>
+            </div>
+
+            <div class="module-section">
+                <div class="module-section-title">Target Sasaran</div>
+                <div class="module-section-text">
+                    Modul ini ditujukan bagi:
+                </div>
+                <ol class="module-section-list">
+                    <li>Remaja dan dewasa muda yang ingin memahami kesehatan reproduksi.</li>
+                    <li>Tenaga kesehatan, kader posyandu, dan penyuluh kesehatan masyarakat.</li>
+                    <li>Pendidik serta pihak sekolah yang ingin meningkatkan literasi kesehatan remaja.</li>
+                    <li>Masyarakat umum yang peduli terhadap pencegahan penyakit menular seksual.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div id="page-modul-pencegahan-komponen" class="page-content hidden">
+            <div class="module-header">
+                <div class="module-header-title">Peduli IMS</div>
+                <div class="module-header-subtitle">Modul E-Learning : Pencegahan IMS</div>
+            </div>
+
+            <div class="component-item" onclick="toggleCarousel('carousel-pencegahan')">
+                <div class="component-item-name">Booklet</div>
+                <i class="fas fa-book component-item-icon"></i>
+                <i class="fas fa-chevron-right component-item-arrow"></i>
+            </div>
+
+            <!-- Carousel booklet pencegahan IMS -->
+
+            <div class="carousel-container" id="carousel-pencegahan">
+                <div class="carousel-wrapper">
+                    <div class="carousel-slide" id="slide-pencegahan">
+                        <img class="carousel-image" id="carousel-image-pencegahan" src="" alt="Slide">
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn" onclick="prevSlide('pencegahan')">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="carousel-indicators">
+                            <span class="carousel-counter" id="counter-pencegahan">1 / 3</span>
+                        </div>
+                        <button class="carousel-btn" onclick="nextSlide('pencegahan')">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="component-item" onclick="alert('Memutar Video Animasi...')">
+                <div class="component-item-name">Video animasi</div>
+                <i class="fas fa-video component-item-icon"></i>
+                <i class="fas fa-chevron-right component-item-arrow"></i>
+            </div>
+
+            <div class="component-item" onclick="alert('Membuka Kuis Interaktif...')">
+                <div class="component-item-name">Kuis interaktif</div>
+                <i class="fas fa-gamepad component-item-icon"></i>
+                <i class="fas fa-chevron-right component-item-arrow"></i>
+            </div>
+        </div>
+
+        <div id="page-modul-penanganan-detail" class="page-content hidden">
+            <div class="module-header">
+                <div class="module-header-title">Peduli IMS</div>
+                <div class="module-header-subtitle">Modul E-Learning : Penanganan IMS</div>
+            </div>
+
+            <div class="card-custom card-blue-alt card-bg-for-blue-alt">
+                <div class="card-text">
+                    <div class="card-title">Modul E-Learning</div>
+                    <button class="card-btn" onclick="navigateTo('modul-penanganan-komponen')">
+                        Baca Sekarang! <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="card-illustration">
+                    <img src="images/idea.webp" alt="Edukasi Penanganan IMS" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+            </div>
+
+            <div class="module-section">
+                <div class="module-section-title">Deskripsi Umum Modul</div>
+                <div class="module-section-text">
+                    Modul e-learning ini disusun untuk memberikan pemahaman mendalam tentang penanganan Infeksi Menular Seksual (IMS) secara cepat, tepat, dan bertanggung jawab. Penanganan dini menjadi langkah krusial dalam menekan angka kasus IMS yang terus meningkat di Indonesia. Banyak penderita menunda pengobatan karena rasa takut, malu, atau tidak mengetahui tempat melapor dan berobat, sehingga infeksi semakin menyebar dan berdampak lebih luas pada kesehatan masyarakat.
+                    <br><br>
+                    Melalui modul ini, peserta akan mempelajari tahapan penanganan IMS mulai dari deteksi dini, pemeriksaan medis, pengobatan, hingga pelaporan kasus kepada fasilitas kesehatan yang berwenang. Peserta juga akan dibimbing untuk memahami alur pelaporan IMS, termasuk kepada puskesmas, rumah sakit, dan lembaga layanan kesehatan reproduksi yang menyediakan pemeriksaan serta pengobatan gratis dan rahasia. Dengan memahami mekanisme pelaporan dan dukungan layanan kesehatan, masyarakat dapat berperan aktif dalam upaya pencegahan dan pengendalian IMS di lingkungannya.
+                </div>
+            </div>
+
+            <div class="module-section">
+                <div class="module-section-title">Tujuan Pembelajaran</div>
+                <div class="module-section-text">
+                    Setelah mengikuti modul ini, peserta diharapkan mampu:
+                </div>
+                <ul class="module-section-list">
+                    <li>Menjelaskan pentingnya penanganan cepat dan tepat pada kasus IMS.</li>
+                    <li>Mengidentifikasi gejala awal IMS dan memahami langkah pertolongan pertama.</li>
+                    <li>Mengetahui alur pelaporan kasus IMS ke fasilitas kesehatan.</li>
+                    <li>Menyebutkan tempat atau lembaga layanan kesehatan yang menangani IMS secara aman dan rahasia.</li>
+                    <li>Memahami peran masyarakat dalam mendukung pelaporan dan pengendalian IMS</li>
+                </ul>
+            </div>
+
+            <div class="module-section">
+                <div class="module-section-title">Target Sasaran</div>
+                <div class="module-section-text">
+                    Modul ini ditujukan bagi:
+                </div>
+                <ol class="module-section-list">
+                    <li>Masyarakat umum yang ingin memahami langkah penanganan IMS.</li>
+                    <li>Remaja dan dewasa muda yang berisiko terpapar IMS.</li>
+                    <li>Tenaga kesehatan, kader, dan penyuluh yang berperan dalam deteksi serta edukasi masyarakat.</li>
+                    <li>Petugas di lembaga layanan kesehatan atau komunitas yang menangani kasus IMS</li>
+                </ol>
+            </div>
+        </div>
+
+        <div id="page-modul-penanganan-komponen" class="page-content hidden">
+            <div class="module-header">
+                <div class="module-header-title">Peduli IMS</div>
+                <div class="module-header-subtitle">Modul E-Learning : Penanganan IMS</div>
+            </div>
+
+            <div class="component-item" onclick="alert('Membuka Booklet...')">
+                <div class="component-item-name">Booklet</div>
+                <i class="fas fa-book component-item-icon"></i>
+                <i class="fas fa-chevron-right component-item-arrow"></i>
+            </div>
+
+            <div class="component-item" onclick="alert('Memutar Video Animasi...')">
+                <div class="component-item-name">Video animasi</div>
+                <i class="fas fa-video component-item-icon"></i>
+                <i class="fas fa-chevron-right component-item-arrow"></i>
+            </div>
+
+            <div class="component-item" onclick="alert('Membuka Kuis Interaktif...')">
+                <div class="component-item-name">Kuis interaktif</div>
+                <i class="fas fa-gamepad component-item-icon"></i>
+                <i class="fas fa-chevron-right component-item-arrow"></i>
             </div>
         </div>
 
@@ -110,7 +293,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='24' height='20' viewBox=
             <div class="card-custom card-green card-bg-for-green">
                 <div class="card-text">
                     <div class="card-title">Beritahu Gejalamu!</div>
-                    <button class="card-btn">
+                    <button class="card-btn" onclick="navigateTo('form-gejala')">
                         Laporkan Sekarang <i class="fas fa-arrow-right"></i>
                     </button>
                 </div>
@@ -122,7 +305,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='24' height='20' viewBox=
             <div class="card-custom card-green-dark card-bg-for-green-dark">
                 <div class="card-text">
                     <div class="card-title">Lihat Hasil Laporan</div>
-                    <button class="card-btn">
+                    <button class="card-btn" onclick="navigateTo('hasil-laporan')">
                         Lihat Sekarang <i class="fas fa-arrow-right"></i>
                     </button>
                 </div>
@@ -132,12 +315,54 @@ background-image: url("data:image/svg+xml,%3Csvg width='24' height='20' viewBox=
             </div>
         </div>
 
+        <!-- Form Gejala -->
+         <div id="page-form-gejala" class="page-content hidden">
+            <div class="form-box">
+                <div class="form-box-title">Beritahu Gejalamu!</div>
+                <div class="form-box-subtitle">Akhir-akhir ini aku...</div>
+                
+                <form id="formGejala">
+                    <textarea 
+                        class="form-control" 
+                        rows="8" 
+                        placeholder="Ceritakan gejala yang kamu alami..."
+                        id="gejalaInput"
+                        required
+                    ></textarea>
+                    
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Kirim Laporan
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Form Hasil Laporan -->
+         <div id="page-hasil-laporan" class="page-content hidden">
+            <div class="form-box">
+                <div class="form-box-title">Respon kami</div>
+                <div class="form-box-subtitle">Halo! Dari gejala kamu...</div>
+                
+                <div class="response-card">
+                    <div class="response-card-text">
+                        Berdasarkan gejala yang Anda laporkan, kami menyarankan untuk segera berkonsultasi dengan dokter. Gejala yang Anda alami mungkin memerlukan pemeriksaan lebih lanjut.
+                        <br><br>
+                        Jangan khawatir, semua informasi Anda akan dijaga kerahasiaannya. Untuk penanganan yang lebih tepat, silakan konsultasi dengan dokter kami.
+                    </div>
+                </div>
+
+                <button class="btn-submit" onclick="navigateTo('konsultasi')">
+                    <i class="fas fa-user-md"></i> Konsultasi ke Dokter
+                </button>
+            </div>
+        </div>
+
         <!-- Page Konsultasi -->
         <div id="page-konsultasi" class="page-content hidden">
             <div class="card-custom card-purple card-bg-for-purple">
                 <div class="card-text">
                     <div class="card-title">Konsultasi ke Dokter</div>
-                    <button class="card-btn">
+                    <button class="card-btn" onclick="navigateTo('daftar-dokter')">
                         Konsultasi Sekarang <i class="fas fa-arrow-right"></i>
                     </button>
                 </div>
@@ -145,6 +370,13 @@ background-image: url("data:image/svg+xml,%3Csvg width='24' height='20' viewBox=
                     <img src="images/menelpon.webp" alt="Konsultasi Dokter" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
             </div>
+        </div>
+        <!-- Page Daftar Dokter -->
+        <div id="page-daftar-dokter" class="page-content hidden">
+            <h2 class="doctor-list-title">Konsultasi ke Dokter!</h2>
+
+            <div id="doctor-list-container"></div>
+        </div>
         </div>
 
         <!-- Page Pengaturan -->
