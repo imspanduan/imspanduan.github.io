@@ -260,8 +260,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (featurePengaduan) featurePengaduan.onclick = () => navigateTo('pengaduan');
     if (featureKonsultasi) featureKonsultasi.onclick = () => navigateTo('konsultasi');
 
-    // ... (Tambahkan event listener lain di sini jika Anda hapus 'onclick' dari HTML)
-    // Contoh:
-    // const btnLapor = document.querySelector('.card-btn[onclick*="form-gejala"]');
-    // if (btnLapor) btnLapor.onclick = () => navigateTo('form-gejala');
+    updateCarouselImage('pencegahan');
+    updateCarouselImage('penanganan');
 });
